@@ -24,8 +24,8 @@ public class Writer {
         }
     }
 
-    public static void stringWriter(){
-     try {
+    public static void stringWriter() {
+        try {
             FileWriter fw = new FileWriter("C:\\ficheros\\fichero2.txt");
             PrintWriter pw = new PrintWriter(fw);
             StringWriter sw = new StringWriter();
@@ -35,10 +35,10 @@ public class Writer {
             sw.close();
             pw.println(sw.getBuffer());
             pw.close();
-           
-     }
-        catch (IOException e){
-            System.out.println("Excecpción" +e);
+
+        } catch (IOException e) {
+            System.out.println("Excecpción" + e);
         }
+
     }
 }
